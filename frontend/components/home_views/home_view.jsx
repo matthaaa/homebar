@@ -1,6 +1,9 @@
 import React from 'react';
 import {Component} from 'react';
 
+// Components
+import HeaderBar from '../general/header_bar';
+
 
 class HomeView extends Component {
 
@@ -17,7 +20,9 @@ class HomeView extends Component {
   // ==================================================
   render() {
     return (
-      <div>Hi mom!</div>
+      <div className="home-container">
+        <HeaderBar />
+      </div>
     );
   }
 

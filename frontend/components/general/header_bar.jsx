@@ -17,7 +17,7 @@ class HeaderBar extends Component {
   // ==================================================
   render() {
     return (
-      <div className="header">HomeBar</div>
+      <div className="main-header-container">HomeBar</div>
     );
   }
 
