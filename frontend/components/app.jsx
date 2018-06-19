@@ -1,4 +1,5 @@
 import React from 'react';
+import {Route, Switch} from 'react-router-dom';
 
 // Components
 
@@ -6,7 +7,9 @@ import React from 'react';
 const App = ({children}) => (
   <div>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet" />
-    <p>Homebar!</p>
+    <Switch>
+      <Route exact path="/" component={<div></div>} />
+    </Switch>
   </div>
 );
 
