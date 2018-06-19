@@ -4,7 +4,10 @@ import React from 'react';
 
 
 const App = ({children}) => (
-  <div>Homebar!</div>
+  <div>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet" />
+    <p>Homebar!</p>
+  </div>
 );
 
 
