@@ -5,9 +5,9 @@ export const fetchDrinks = () => (
   })
 );
 
-export const fetchDrink = (idDrink) => (
+export const fetchDrinkByIngredient = (ingredient) => (
   $.ajax({
     method: "GET",
-    url: `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`
+    url: `https://www.thecocktaildb.com/api/json/v1/1/search.php?i=${ingredient}`
   })
 );
