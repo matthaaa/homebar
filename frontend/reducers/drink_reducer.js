@@ -1,7 +1,7 @@
 import {merge} from 'lodash';
 import {RECEIVE_DRINKS_BY_INGREDIENT} from '../actions/drink_actions';
 
-const drinksReducer = (oldState = {}, action) => {
+const drinkReducer = (oldState = {}, action) => {
   Object.freeze(oldState);
 
   switch(action.type) {
@@ -12,4 +12,4 @@ const drinksReducer = (oldState = {}, action) => {
   }
 };
 
-export default drinksReducer;
+export default drinkReducer;

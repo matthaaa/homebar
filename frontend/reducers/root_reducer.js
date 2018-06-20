@@ -4,6 +4,7 @@ import ErrorReducer from './errors_reducer';
 
 const RootReducer = combineReducers({
   errors: ErrorReducer,
+  drinks: DrinksReducer
 });
 
 
