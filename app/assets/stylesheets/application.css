@@ -37,3 +37,7 @@
  ol, ul {
   	list-style: none;
  }
+
+ textarea:focus, input:focus{
+    outline: none;
+}
