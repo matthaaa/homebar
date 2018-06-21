@@ -50,17 +50,19 @@ class HomeView extends Component {
     return (
       <div className="home-container">
         <HeaderBar />
-        <DrinkForm
-          ingredient={this.state.ingredient}
-          onUpdate={this.handleUpdate}
-          onSubmit={this.handleSubmit}
-        />
-      <div className="footer">
-        <p>Powered by</p>
-        <a href="https://www.thecocktaildb.com/api.php">
-          The Cocktail Database
-        </a>
-      </div>
+        <div className="home-view-body">
+          <DrinkForm
+            ingredient={this.state.ingredient}
+            onUpdate={this.handleUpdate}
+            onSubmit={this.handleSubmit}
+          />
+          <div className="footer">
+            <p>Powered by</p>
+            <a href="https://www.thecocktaildb.com/api.php">
+              The Cocktail Database
+            </a>
+          </div>
+        </div>
       </div>
     );
   }
