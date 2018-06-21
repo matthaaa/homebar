@@ -5,7 +5,7 @@ import DrinkReducer from './drink_reducer';
 
 const RootReducer = combineReducers({
   errors: ErrorReducer,
-  drinks: DrinkReducer
+  drinks: DrinkReducer,
 });
 
 
