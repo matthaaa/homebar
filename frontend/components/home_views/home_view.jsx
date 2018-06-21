@@ -56,12 +56,12 @@ class HomeView extends Component {
             onUpdate={this.handleUpdate}
             onSubmit={this.handleSubmit}
           />
-          <div className="footer">
-            <p>Powered by</p>
-            <a href="https://www.thecocktaildb.com/api.php">
-              The Cocktail Database
-            </a>
-          </div>
+        </div>
+        <div className="footer">
+          <p>Powered by</p>
+          <a href="https://www.thecocktaildb.com/api.php">
+            The Cocktail Database
+          </a>
         </div>
       </div>
     );
