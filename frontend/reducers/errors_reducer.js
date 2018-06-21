@@ -1,6 +1,7 @@
 import {merge} from 'lodash';
 import {RECEIVE_ERRORS, RECEIVE_DRINKS_BY_INGREDIENT} from '../actions/drink_actions';
 
+
 export default (oldState = [], action) => {
   Object.freeze(oldState);
 
@@ -13,5 +14,3 @@ export default (oldState = [], action) => {
       return oldState;
   }
 };
-
-export default errorsReducer;
