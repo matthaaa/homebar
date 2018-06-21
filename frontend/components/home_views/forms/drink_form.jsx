@@ -1,5 +1,6 @@
 import React from 'react';
 import {Component} from 'react';
+import anime from 'animejs'
 
 
 class DrinkForm extends Component {
@@ -17,7 +18,11 @@ class DrinkForm extends Component {
   // ==================================================
   render() {
     return (
-      <div className="drink-form-container">Hi mom!</div>
+      <div className="drink-form-container">
+        <p className="test">
+          Hi mom!
+        </p>
+      </div>
     );
   }
 

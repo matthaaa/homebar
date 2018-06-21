@@ -12,3 +12,28 @@ $navy: #163962;
 .drink-form-container {
   padding-top: 100px;
 }
+
+.drink-form-container p {
+    font-size: 21px;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
