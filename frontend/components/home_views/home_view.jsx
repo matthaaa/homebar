@@ -13,6 +13,12 @@ class HomeView extends Component {
   // ==================================================
   // Initialize
   // ==================================================
+  constructor(props) {
+    super(props);
+    this.state = {
+      ingredient: "",
+    };
+  }
 
   // ==================================================
   // Methods
