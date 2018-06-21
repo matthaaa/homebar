@@ -1,14 +1,8 @@
 import React from 'react';
 import {Component} from 'react';
 
-// Components
-import HeaderBar from '../general/header_bar';
 
-// Forms
-import DrinkForm from './forms/drink_form';
-
-
-class HomeView extends Component {
+class DrinkForm extends Component {
 
   // ==================================================
   // Initialize
@@ -23,13 +17,10 @@ class HomeView extends Component {
   // ==================================================
   render() {
     return (
-      <div className="home-container">
-        <HeaderBar />
-        <DrinkForm />
-      </div>
+      <div className="drink-form-container">Hi mom!</div>
     );
   }
 
 };
 
-export default HomeView;
+export default DrinkForm;
