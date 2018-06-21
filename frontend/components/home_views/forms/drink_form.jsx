@@ -30,6 +30,7 @@ class DrinkForm extends Component {
           onChange={onUpdate('ingredient')}
         />
         <button
+          className="drink-form-submit-button"
           onClick={onSubmit}>
           Submit
         </button>
