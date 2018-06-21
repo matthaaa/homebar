@@ -1,6 +1,5 @@
 import React from 'react';
 import {Component} from 'react';
-import anime from 'animejs'
 
 // Components
 import FormInput from '../../general/forms/form_input';
