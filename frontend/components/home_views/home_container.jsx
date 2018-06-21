@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router';
-import {requestDrinksByIngredient} from '../../../actions/drink_actions';
+import {requestDrinksByIngredient} from '../../actions/drink_actions';
 
 // Components
 import HomeView from './home_view';

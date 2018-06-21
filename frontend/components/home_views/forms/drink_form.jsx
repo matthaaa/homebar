@@ -20,7 +20,7 @@ class DrinkForm extends Component {
   // Render
   // ==================================================
   render() {
-    const {ingredient, onUpdate} = this.props;
+    const {ingredient, onUpdate, onSubmit} = this.props;
 
     return (
       <div className="drink-form-container">
@@ -30,6 +30,10 @@ class DrinkForm extends Component {
           value={ingredient}
           onChange={onUpdate('ingredient')}
         />
+        <button
+          onClick={onSubmit}>
+          Submit
+        </button>
       </div>
     );
   }

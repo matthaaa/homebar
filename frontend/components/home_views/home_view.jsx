@@ -19,6 +19,7 @@ class HomeView extends Component {
       ingredient: "",
     };
     this.handleUpdate = this.handleUpdate.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
   // ==================================================
   // Lifecycle
@@ -38,19 +39,21 @@ class HomeView extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.login(this.state);
+    this.props.requestDrinksByIngredient(this.state.ingredient);
   }
 
   // ==================================================
   // Render
   // ==================================================
   render() {
+    console.log(this.props);
     return (
       <div className="home-container">
         <HeaderBar />
         <DrinkForm
           ingredient={this.state.ingredient}
           onUpdate={this.handleUpdate}
+          onSubmit={this.handleSubmit}
         />
       </div>
     );
