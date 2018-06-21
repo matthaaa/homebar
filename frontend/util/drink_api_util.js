@@ -1,5 +1,6 @@
 import $ from 'jquery';
 
+
 export const fetchDrinks = () => (
   $.ajax({
     method: "GET",
