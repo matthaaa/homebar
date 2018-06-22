@@ -8,15 +8,9 @@ export const fetchDrinks = () => (
   })
 );
 
-export const fetchDrinkByFilter = (filter, query) => {
-  switch(filter) {
-    case "ingredient":
-      const key = "i";
-  }
-
-  return (
+export const fetchDrinkByFilter = (key, query) => (
   $.ajax({
     method: "GET",
     url: `https://www.thecocktaildb.com/api/json/v1/1/filter.php?${key}=${query}`
-  });)
-};
+  })
+);

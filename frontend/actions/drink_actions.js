@@ -6,7 +6,7 @@ export const RECEIVE_ERRORS = 'RECEIVE_ERRORS';
 
 
 export const requestDrinksByIngredient = (ingredient) => dispatch => (
-  DrinkAPIUtil.fetchDrinkByFilter("ingredient", ingredient).then(payload => dispatch(receiveDrinksByIngredient(payload))
+  DrinkAPIUtil.fetchDrinkByFilter("i", ingredient).then(payload => dispatch(receiveDrinksByIngredient(payload))
 ), err => (
     dispatch(receiveErrors(err.responseJSON))
 ));
