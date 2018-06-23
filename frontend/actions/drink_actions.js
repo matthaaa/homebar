@@ -11,6 +11,12 @@ export const requestDrinksByIngredient = (ingredient) => dispatch => (
     dispatch(receiveErrors(err.responseJSON))
 ));
 
+export const requestDrinksByGlass = (glass) => dispatch => (
+  DrinkAPIUtil.fetchDrinkByFilter("g", glass).then(payload => dispatch(receiveDrinksByIngredient(payload))
+), err => (
+    dispatch(receiveErrors(err.responseJSON))
+));
+
 export const receiveDrinksByIngredient = (payload) => ({
   type: RECEIVE_DRINKS_BY_INGREDIENT,
   payload,
