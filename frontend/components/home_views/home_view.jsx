@@ -17,6 +17,8 @@ class HomeView extends Component {
     super(props);
     this.state = {
       ingredient: "",
+      // TODO: Convert glass input to snake format before sending request.
+      glass: "",
     };
     this.handleUpdate = this.handleUpdate.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -53,6 +55,7 @@ class HomeView extends Component {
         <div className="home-view-body">
           <DrinkForm
             ingredient={this.state.ingredient}
+            glass={this.state.glass}
             onUpdate={this.handleUpdate}
             onSubmit={this.handleSubmit}
           />
