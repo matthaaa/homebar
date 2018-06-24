@@ -1,24 +1,24 @@
 import * as DrinkAPIUtil from '../util/drink_api_util';
 
 
-export const RECEIVE_DRINKS_BY_INGREDIENT = 'RECEIVE_DRINKS_BY_INGREDIENT';
+export const RECEIVE_DRINKS = 'RECEIVE_DRINKS';
 export const RECEIVE_ERRORS = 'RECEIVE_ERRORS';
 
 
 export const requestDrinksByIngredient = (ingredient) => dispatch => (
-  DrinkAPIUtil.fetchDrinkByFilter("i", ingredient).then(payload => dispatch(receiveDrinksByIngredient(payload))
+  DrinkAPIUtil.fetchDrinkByFilter("i", ingredient).then(payload => dispatch(receiveDrinks(payload))
 ), err => (
     dispatch(receiveErrors(err.responseJSON))
 ));
 
 export const requestDrinksByGlass = (glass) => dispatch => (
-  DrinkAPIUtil.fetchDrinkByFilter("g", glass).then(payload => dispatch(receiveDrinksByIngredient(payload))
+  DrinkAPIUtil.fetchDrinkByFilter("g", glass).then(payload => dispatch(receiveDrinks(payload))
 ), err => (
     dispatch(receiveErrors(err.responseJSON))
 ));
 
-export const receiveDrinksByIngredient = (payload) => ({
-  type: RECEIVE_DRINKS_BY_INGREDIENT,
+export const receiveDrinks = (payload) => ({
+  type: RECEIVE_DRINKS,
   payload,
 })
 

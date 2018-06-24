@@ -1,5 +1,5 @@
 import {merge} from 'lodash';
-import {RECEIVE_ERRORS, RECEIVE_DRINKS_BY_INGREDIENT} from '../actions/drink_actions';
+import {RECEIVE_ERRORS, RECEIVE_DRINKS} from '../actions/drink_actions';
 
 
 export default (oldState = [], action) => {
@@ -8,7 +8,7 @@ export default (oldState = [], action) => {
   switch (action.type) {
     case RECEIVE_ERRORS:
       return merge([], oldState, action.errors);
-    case RECEIVE_DRINKS_BY_INGREDIENT:
+    case RECEIVE_DRINKS:
       return null;
     default:
       return oldState;
