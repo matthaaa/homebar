@@ -8,6 +8,13 @@ export const fetchDrinks = () => (
   })
 );
 
+export const fetchIngredients = () => (
+  $.ajax({
+    method: "GET",
+    url: `https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list`
+  })
+);
+
 export const fetchDrinkByFilter = (key, query) => (
   $.ajax({
     method: "GET",
