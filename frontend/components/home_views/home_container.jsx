@@ -6,8 +6,10 @@ import {requestDrinksByIngredient} from '../../actions/drink_actions';
 import HomeView from './home_view';
 
 
-const mapStateToProps = (state, ownProps) => ({
-})
+const mapStateToProps = (state) => {
+  const { drinks } = state;
+  return { drinks };
+}
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
   requestDrinksByIngredient: (ingredient) => dispatch(

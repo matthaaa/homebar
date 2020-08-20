@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Component} from 'react';
 
 // Components
@@ -29,12 +30,12 @@ class DrinkForm extends Component {
           value={ingredient}
           onChange={onUpdate('ingredient')}
         />
-        <FormInput
+        {/* <FormInput
           placeholder={"Enter a type of glass"}
           contentClassName={"ingredient-input"}
           value={glass}
           onChange={onUpdate('glass')}
-        />
+        /> */}
         <button
           className="drink-form-submit-button"
           onClick={onSubmit}>
@@ -44,6 +45,13 @@ class DrinkForm extends Component {
     );
   }
 
+};
+
+DrinkForm.propTypes = {
+  ingredient: PropTypes.string.isRequired,
+  glass: PropTypes.string.isRequired,
+  onUpdate: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default DrinkForm;
